@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Heebo:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.4);
+    position: relative;
+    
+}
+nav #logo{
+    width: 20%;
+    text-align: center;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    height: 100%;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+  
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li a.register{
+    background: rgb(27, 131, 50);
+    padding: 10px 15px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.toggle{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+.social{
+  font-size: 30px;
+}
+.fab.fa-facebook{
+    color: blue;
+}
+.fab.fa-youtube{
+    color: red;
+}
+.fab.fa-telegram{
+    color: rgb(102, 205, 196);
+}
+.fab.fa-instagram{
+    color: rgb(64, 93, 230);
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    height: 60vh;
+    position: relative;
+    opacity: 0;
+    overflow: hidden;
+}
+.banner img{
+    width: 50%;
+    height: 100%;
+   transform: translateX(20%);
+   opacity: 0;
+}
+.text-content p{
+  transform: translateY(20%);
+  opacity: 0;
+}
+.banner .text-content h1{
+    margin-top: 25px;
+    transform: translateY(20%);
+    opacity: 0;
+}
+.banner .text-content p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 2;
+    word-spacing: 2px;
+    word-wrap: break-word;
+    width: 90%;
+}
+.banner .text-content span{
+    color: #ea6f2e;
+}
+.banner-btn {
+  
+    padding: 15px 15px;
+    border: none;
+    outline: none;
+    background: green;
+    color: #fff;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transform: translateY(20%);
+    opacity: 0;
+}
+@media screen and (min-width:1000px){
+    /* .banner-btn{
+            position: absolute;
+            left: 10%;
+            top: 80%;
+            padding: 15px 15px;
+            border: none;
+            outline: none;
+            background: green;
+            color: #fff;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            font-size: 18px;
+         
+    } */
+}
+@media screen and (max-width:968px){
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        flex-direction: column;
+        background: #fff;
+        color: #fff;
+        align-items: center;
+        clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-in-out;
+    }
+    nav ul.open{
+        clip-path: circle(1000px at 90% -10%);
+    }
+    nav ul li a{
+        color: #000;
+    }
+    .toggle {
+        display: block;
+        cursor: pointer;
+    }
+    .banner{
+        height: 40vh;
+        display: grid;
+    }
+    .banner .text-content{
+        place-items: center;
+        text-align: center;
+    }
+    .text-content p{
+        display: none;
+    }
+    .banner img{
+        width: 90%;
+        height: 80%;
+        margin: auto;
+        pointer-events: none;
+    }
+    /* .banner-btn{
+        width: 30% !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: green;
+        color: #fff;
+        border: none;
+        outline: none;
+        letter-spacing: 0.5px;
+        transition: all 0.5s ease-in-out;
+        margin: auto;
+        cursor: pointer;
+        
+        font-size: 12px;
+    } */
+    
+}
