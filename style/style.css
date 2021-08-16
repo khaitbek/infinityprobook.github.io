@@ -122,6 +122,13 @@ nav ul li a.register{
     transform: translateY(20%);
     opacity: 0;
 }
+/* .underline{
+    width: 80%;
+    margin: auto;
+    height: 2px;
+    background: #000;
+    margin-top: 25px;
+} */
 @media screen and (min-width:1000px){
     /* .banner-btn{
             position: absolute;
@@ -162,8 +169,10 @@ nav ul li a.register{
         cursor: pointer;
     }
     .banner{
-        height: 40vh;
+        height: 60vh;
         display: grid;
+        place-content: center;
+        place-items: center;
     }
     .banner .text-content{
         place-items: center;
@@ -173,9 +182,9 @@ nav ul li a.register{
         display: none;
     }
     .banner img{
-        width: 90%;
-        height: 80%;
-        margin: auto;
+        height: 100% !important;
+        
+        
         pointer-events: none;
     }
     /* .banner-btn{
