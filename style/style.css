@@ -75,7 +75,7 @@ nav ul li a.register{
     justify-content: space-around;
     width: 80%;
     margin: auto;
-    margin-top: 50px;
+    
     height: 60vh;
     position: relative;
     opacity: 0;
@@ -95,6 +95,9 @@ nav ul li a.register{
     margin-top: 25px;
     transform: translateY(20%);
     opacity: 0;
+}
+.banner .text-content h1 span{
+    color: red;
 }
 .banner .text-content p{
     margin-top: 25px;
@@ -144,6 +147,15 @@ nav ul li a.register{
             font-size: 18px;
          
     } */
+    nav ul li a{
+        font-size: 18px;
+    }
+    .banner{
+        margin-top: 50px;
+    }
+    p{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width:968px){
     nav ul{
@@ -157,19 +169,19 @@ nav ul li a.register{
         align-items: center;
         clip-path: circle(100px at 90% -10%);
         transition: all 1s ease-in-out;
+        z-index: 10;
     }
     nav ul.open{
         clip-path: circle(1000px at 90% -10%);
     }
-    nav ul li a{
-        color: #000;
-    }
+    
     .toggle {
         display: block;
         cursor: pointer;
+        z-index: 10;
     }
     .banner{
-        height: 60vh;
+        height: 90vh;
         display: grid;
         place-content: center;
         place-items: center;
@@ -179,11 +191,12 @@ nav ul li a.register{
         text-align: center;
     }
     .text-content p{
-        display: none;
+        
     }
     .banner img{
-        height: 100% !important;
-        
+        height: 200px;
+        width: 80%;
+        margin-top: 20px;
         
         pointer-events: none;
     }
