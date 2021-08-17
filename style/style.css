@@ -192,8 +192,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    position: sticky;
-    bottom: 0; 
+  
 }
 footer li {
     list-style: none;
