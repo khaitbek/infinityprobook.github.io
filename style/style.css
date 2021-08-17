@@ -14,8 +14,7 @@ nav{
     align-items: center;
     min-height: 15vh;
     box-shadow: 0 10px 15px rgba(0,0,0,0.4);
-    position: relative;
-    
+   position: relative;
 }
 nav #logo{
     width: 20%;
@@ -132,6 +131,75 @@ nav ul li a.register{
     background: #000;
     margin-top: 25px;
 } */
+/* BOOKS */
+.books{
+   display: grid;
+    place-items: center;
+   
+    position: relative;
+   
+    margin-top: 50px;
+}
+.card{
+    height: 250px;
+    width: 400px;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) ;
+    -moz-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) ;
+    box-shadow: 0px 1px 5px 0px rgba(34, 60, 80, 0.6) ;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(10%);
+    opacity: 0;
+}
+.books h1{
+    font-size: 40px;
+    color: red;
+    transform: translateY(10%);
+    opacity: 0;
+}
+.books h1{
+    animation: leaves 2.5s ease-in-out infinite;
+}
+
+.beginner-books{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-top: 25px;
+}
+.card a{
+    
+    text-decoration: none;
+    color: #000;
+    
+    font-weight: bold;
+    font-size: 25px;
+}
+.card img{
+    width:300px;
+    height:200px;
+    padding: 5px;
+}
+footer{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    bottom: 0; 
+}
+footer li {
+    list-style: none;
+    letter-spacing: 0.5px;
+}
+
 @media screen and (min-width:1000px){
     /* .banner-btn{
             position: absolute;
@@ -157,6 +225,14 @@ nav ul li a.register{
         font-size: 20px;
     }
 }
+@media screen and (max-width:1350px){
+    .beginner-books{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+   
+    
+}
 @media screen and (max-width:968px){
     nav ul{
         position: fixed;
@@ -167,7 +243,7 @@ nav ul li a.register{
         background: #fff;
         color: #fff;
         align-items: center;
-        clip-path: circle(100px at 90% -10%);
+        clip-path: circle(0px at 90% -10%);
         transition: all 1s ease-in-out;
         z-index: 10;
     }
@@ -215,5 +291,43 @@ nav ul li a.register{
         
         font-size: 12px;
     } */
-    
+    .beginner-books{
+        grid-template-columns: 1fr;
+    }
+    .books{
+        
+            
+        
+    }
+    .books h1{
+        font-size: 20px;
+    }
+    .card{
+        width: 300px;
+    }
+    footer{
+        flex-wrap: wrap-reverse;
+    }
+    footer h1{
+        font-size: 20px;
+    }
+}
+
+@keyframes leaves {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+@media screen and(max-width:400px) {
+    body{
+        display: none;
+    }
 }

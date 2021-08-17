@@ -8,7 +8,7 @@ let tl = gsap.timeline({ defaults: { ease: "power1.out" } });
     opacity:1,
     duration:1
 })
-tl.to("h1",{
+tl.to("h1",{z
     opacity:1,
     duration:0.5,
     stagger:0
@@ -49,4 +49,20 @@ tl.to(".banner-btn",{
     duration:2,
     stagger:0.5,
     delay:0
-},'-=1.5')
+},'-=1.5');
+let card = document.querySelector(".card");
+let banner = document.querySelector(".banner");
+
+   
+        tl.to(".card",{
+            opacity:1,
+            y:"0%",
+            delay:0.5
+        })
+        tl.to(".books h1",{
+            opacity:1,
+            y:"0%",
+            stagger:0.25
+        })
+    
+     
