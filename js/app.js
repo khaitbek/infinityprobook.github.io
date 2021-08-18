@@ -69,11 +69,11 @@ let banner = document.querySelector(".banner");
 /* BOOKS */
 let grammar_btn = document.querySelector(".grammar-btn");
 let vocabulary_btn = document.querySelector(".vocabulary-btn");
-let listening_btn = document.querySelector(".listening-btn");
+
 let btns = document.querySelectorAll(".books-btn button");
 let grammar = document.querySelector(".grammar-books-div");
 let vocabulary = document.querySelector(".vocabulary-books-div");
-let listening = document.querySelector(".listening-books-div");
+
 let strong = document.querySelectorAll("strong");
 let card_ = document.querySelectorAll(".card_");
 
@@ -88,30 +88,28 @@ let card_ = document.querySelectorAll(".card_");
 grammar_btn.addEventListener("click",()=>{
     grammar.style.display = "flex";
     vocabulary.style.display = "none";
-    listening.style.display = "none";
+    
     console.log("Worked");
     card_.forEach((card)=>{
         card.style.display = "none";
+    })
+    strong.forEach((strong)=>{
+        strong.style.display = "block";
     })
 })
 vocabulary_btn.addEventListener("click",()=>{
     vocabulary.style.display = "flex";
     grammar.style.display = "none";
-    listening.style.display = "none";
+    
     console.log("Worked");
     card_.forEach((card)=>{
         card.style.display = "none";
     })
-})
-listening_btn.addEventListener("click",()=>{
-    listening.style.display = "flex";
-    vocabulary.style.display = "none";
-    grammar.style.display = "none";
-    console.log("Worked");
-    card_.forEach((card)=>{
-        card.style.display = "none";
+    strong.forEach((strong)=>{
+        strong.style.display = "block";
     })
 })
+
 strong.forEach((strong)=>{
     strong.onclick = ()=>{
         card_.forEach((card)=>{

@@ -177,7 +177,9 @@ strong{
     padding-bottom: 20px;
     padding-top: 5px;
     font-size: 20px;
-    flex-shrink: 1;
+    position: relative;
+    flex-basis: 100%;
+    text-align: center;
 }
 .books h1{
     font-size: 40px;
@@ -252,23 +254,26 @@ footer li {
     display: none;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    position: relative;
 }
 .vocabulary-books-div{
     display: none;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    position: relative;
 }
 .listening-books-div{
     display: none;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    position: relative;
 }
 .books-btn{
     display: flex;
-    justify-content: space-between;
-    width: 30%;
+    justify-content: space-evenly;
+    
     position: relative;
-    left: 40%;
+    
     margin-bottom: 20px;
     font-size: 20px;
 }
