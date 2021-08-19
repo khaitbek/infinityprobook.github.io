@@ -285,7 +285,24 @@ footer li {
     border: none;
     outline: none;
 }
-
+.intro{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    
+}
+.intro h1{
+    word-wrap: break-word;
+    transform: translateY(10%);
+    opacity: 0;
+}
 @media screen and (min-width:1000px){
     /* .banner-btn{
             position: absolute;
