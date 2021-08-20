@@ -104,8 +104,10 @@ grammar_btn.addEventListener("click",()=>{
     strong.forEach((strong)=>{
         strong.style.display = "block";
     })
+    document.querySelector(".books-section").style.height = "100%";
 })
 vocabulary_btn.addEventListener("click",()=>{
+    document.querySelector(".books-section").style.height = "100%";
     vocabulary.style.display = "flex";
     grammar.style.display = "none";
     
