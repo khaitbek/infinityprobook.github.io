@@ -2,6 +2,7 @@ const toggle = document.querySelector(".toggle");
 const ul = document.querySelector("ul");
 toggle.addEventListener("click", () => {
   ul.classList.toggle("open");
+  document.body.classList.toggle("sticky-body")
 });
 let tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 /* tl.to("nav",{
